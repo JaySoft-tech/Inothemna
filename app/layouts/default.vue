@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col min-h-screen bg-[#FFF0E1]">
+    <div class="flex flex-col min-h-screen bg-[#FFF0E1] overflow-hidden">
         <Header />
 
         <main class="flex-grow">

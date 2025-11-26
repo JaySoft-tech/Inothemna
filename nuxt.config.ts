@@ -1,5 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true }
-})
+    compatibilityDate: '2025-07-15',
+    devtools: { enabled: true },
+
+    modules: [
+        '@nuxt/image',
+        '@nuxtjs/tailwindcss',
+        '@vueuse/nuxt',
+        '@nuxtjs/google-fonts',
+    ],
+
+    googleFonts: {
+        display: 'swap',
+        preconnect: true,
+        families: {
+            Outfit: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+            'Shantell Sans': [300, 400, 500, 600, 700, 800],
+        },
+    },
+});
