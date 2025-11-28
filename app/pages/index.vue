@@ -19,6 +19,10 @@
     </div>
 
     <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+      <FAQSection />
+    </div>
+
+    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
       <ContactFormSection />
     </div>
   </div>
@@ -30,6 +34,7 @@ import AudienceSection from '~/features/home/ui/AudienceSection.vue';
 import ComfortableLearning from '~/features/home/ui/ComfortableLearning.vue';
 import PricesSection from '~/features/home/ui/PricesSection.vue';
 import ContactFormSection from '~/features/home/ui/ContactFormSection.vue';
+import FAQSection from '~/features/home/ui/FAQSection.vue';
 </script>
 
 <style scoped></style>
