@@ -1,21 +1,24 @@
 <template>
-    <div class="bgImage min-h-[1120px] relative text-[#FFF0E1]">
+    <div
+        class="bgImage min-h-[900px] sm:min-h-[1120px] relative text-[#FFF0E1]"
+    >
         <!-- heading text -->
         <div
-            class="text-[50px]/[120px] desktop:text-[60px]/[120px] font-outfit font-bold px-[80px] desktop:px-[155px] pt-[60px] desktop:pt-[80px]"
+            class="sm:w-auto w-full text-center sm:text-start text-[25px]/[30px] sm:text-[50px]/[120px] desktop:text-[60px]/[120px] font-outfit font-bold sm:px-[80px] desktop:px-[155px] pt-[60px] desktop:pt-[80px]"
         >
-            МИ ПРАЦЮЄМО ДЛЯ ВСІХ, ХТО :
+            МИ ПРАЦЮЄМО <br class="sm:hidden block" />
+            ДЛЯ ВСІХ, ХТО :
         </div>
 
         <!-- first row -->
         <div
-            class="mt-[40px] desktop:mt-[70px] w-full px-[80px] desktop:px-[155px] flex flex-row items-end gap-[80px] desktop:gap-[120px]"
+            class="mt-[50px] desktop:mt-[70px] w-full px-[20px] sm:px-[80px] desktop:px-[155px] flex flex-col sm:flex-row items-start sm:items-end gap-[50px] sm:gap-[80px] desktop:gap-[120px]"
         >
             <!-- first quotient with book -->
             <div class="flex items-end gap-[50px] desktop:gap-[100px]">
                 <!-- book image -->
                 <img
-                    class="max-h-[200px] desktop:max-h-[250px] object-contain"
+                    class="max-h-[200px] desktop:max-h-[250px] object-contain sm:block hidden"
                     src="/images/icons/book.svg"
                     alt="Книга"
                 />
@@ -29,18 +32,18 @@
                         <img
                             src="/images/icons/quotient-white.svg"
                             alt="Білі лапки"
-                            class="max-h-[45px] desktop:max-h-none"
+                            class="max-h-[24px] sm:max-h-[45px] desktop:max-h-none"
                         />
                         <img
                             src="/images/icons/quotient-white.svg"
                             alt="Білі лапки"
-                            class="ml-[-30px] mb-[-10px] rotate-[15deg] max-h-[45px] desktop:max-h-none"
+                            class="ml-[-30px] mb-[-10px] rotate-[15deg] max-h-[24px] sm:max-h-[45px] desktop:max-h-none"
                         />
                     </div>
 
                     <!-- text -->
                     <p
-                        class="bgOval1 relative font-shantell text-[35px]/[120%] desktop:text-[45.47px]/[120%] font-medium z-10"
+                        class="bgOval1 relative font-shantell text-[20px]/[140%] sm:text-[35px]/[120%] desktop:text-[45.47px]/[120%] font-medium z-10"
                     >
                         Лондон із зе кепітал <br />
                         оф Грейт Брітан
@@ -58,23 +61,25 @@
                     <img
                         src="/images/icons/quotient-white.svg"
                         alt="Білі лапки"
-                        class="max-h-[45px] desktop:max-h-none"
+                        class="max-h-[24px] sm:max-h-[45px] desktop:max-h-none"
                     />
                     <img
                         src="/images/icons/quotient-white.svg"
                         alt="Білі лапки"
-                        class="ml-[-30px] mb-[-10px] rotate-[15deg] max-h-[45px] desktop:max-h-none"
+                        class="ml-[-30px] mb-[-10px] rotate-[15deg] max-h-[24px] sm:max-h-[45px] desktop:max-h-none"
                     />
 
                     <!-- text -->
-                    <p class="text-[20px]/[100%] font-outfit">
+                    <p
+                        class="text-[12px]/[100%] sm:text-[20px]/[100%] font-outfit"
+                    >
                         вчив-вчив і шо ?
                     </p>
                 </div>
 
                 <!-- text -->
                 <p
-                    class="bgOval2 relative font-shantell text-[35px]/[120%] desktop:text-[45.47px]/[120%] font-medium z-10"
+                    class="bgOval2 relative font-shantell text-[20px]/[140%] sm:text-[35px]/[120%] desktop:text-[45.47px]/[120%] font-medium z-10"
                 >
                     знову все чи то форгот, <br />
                     чи то форготтен?
@@ -84,7 +89,7 @@
 
         <!-- second row -->
         <div
-            class="mt-[40px] desktop:mt-[120px] px-[80px] desktop:px-[155px] flex items-center gap-[150px] desktop:gap-[240px]"
+            class="mt-[50px] desktop:mt-[120px] px-[20px] sm:px-[80px] desktop:px-[155px] flex flex-col sm:flex-row items-start sm:items-center gap-[50px] sm:gap-[150px] desktop:gap-[240px]"
         >
             <!-- first quotient -->
             <div
@@ -96,21 +101,25 @@
                     <img
                         src="/images/icons/quotient-white.svg"
                         alt="Білі лапки"
-                        class="max-h-[45px] desktop:max-h-none"
+                        class="max-h-[24px] sm:max-h-[45px] desktop:max-h-none"
                     />
                     <img
                         src="/images/icons/quotient-white.svg"
                         alt="Білі лапки"
-                        class="ml-[-30px] mb-[-10px] rotate-[15deg] max-h-[45px] desktop:max-h-none"
+                        class="ml-[-30px] mb-[-10px] rotate-[15deg] max-h-[24px] sm:max-h-[45px] desktop:max-h-none"
                     />
 
                     <!-- text -->
-                    <p class="text-[20px]/[100%] font-outfit">Для тих хто</p>
+                    <p
+                        class="text-[12px]/[100%] sm:text-[20px]/[100%] font-outfit"
+                    >
+                        Для тих хто
+                    </p>
                 </div>
 
                 <!-- text -->
                 <p
-                    class="bgOval3 relative font-shantell text-[35px]/[140%] desktop:text-[45.47px]/[140%] font-medium z-10"
+                    class="bgOval3 relative font-shantell text-[20px]/[140%] sm:text-[35px]/[140%] desktop:text-[45.47px]/[140%] font-medium z-10"
                 >
                     сокіабле, кукумбер <br />
                     і бісукле
@@ -127,23 +136,25 @@
                     <img
                         src="/images/icons/quotient-white.svg"
                         alt="Білі лапки"
-                        class="max-h-[45px] desktop:max-h-none"
+                        class="max-h-[24px] sm:max-h-[45px] desktop:max-h-none"
                     />
                     <img
                         src="/images/icons/quotient-white.svg"
                         alt="Білі лапки"
-                        class="ml-[-30px] mb-[-10px] rotate-[15deg] max-h-[45px] desktop:max-h-none"
+                        class="ml-[-30px] mb-[-10px] rotate-[15deg] max-h-[24px] sm:max-h-[45px] desktop:max-h-none"
                     />
 
                     <!-- text -->
-                    <p class="text-[20px]/[100%] font-outfit">
+                    <p
+                        class="text-[12px]/[100%] sm:text-[20px]/[100%] font-outfit"
+                    >
                         Ми працюємо, щоб ваше
                     </p>
                 </div>
 
                 <!-- text -->
                 <p
-                    class="bgOval4 relative font-shantell text-[35px]/[120%] desktop:text-[45.47px]/[120%] font-medium z-10"
+                    class="bgOval4 relative font-shantell text-[20px]/[140%] sm:text-[35px]/[120%] desktop:text-[45.47px]/[120%] font-medium z-10"
                 >
                     the — стало «the best»
                 </p>
@@ -152,20 +163,22 @@
 
         <!-- third row -->
         <div
-            class="w-full mt-[90px] desktop:mt-[50px] flex flex-col items-end px-[35px] desktop:px-[52px]"
+            class="w-full mt-[50px] sm:mt-[90px] desktop:mt-[50px] flex flex-col sm:items-end pr-[70px] sm:pr-0 px-[20px] sm:px-[35px] desktop:px-[52px]"
         >
             <div
-                class="max-w-[505px] desktop:max-w-[625px] w-full flex items-end gap-[35px] border-t border-[#FFF0E1] pt-[30px] desktop:pt-[60px]"
+                class="max-w-[505px] desktop:max-w-[625px] w-full flex items-end gap-[20px] sm:gap-[35px] border-t border-[#FFF0E1] pt-[30px] desktop:pt-[60px]"
             >
                 <!-- image -->
                 <img
-                    class="max-h-[70px] object-contain"
+                    class="max-h-[55px] sm:max-h-[70px] object-contain"
                     src="/images/icons/lamp.svg"
                     alt="Лампочка"
                 />
 
                 <!-- text -->
-                <p class="text-[30px]/[100%] font-medium font-shantell">
+                <p
+                    class="text-[14px]/[100%] sm:text-[30px]/[100%] font-medium font-shantell"
+                >
                     Бо світ звісно бентеж ний, але й без інгліша у ньому нікуди
                 </p>
             </div>
@@ -173,7 +186,7 @@
 
         <!-- arrow down -->
         <img
-            class="absolute top-0 right-0 object-contain max-h-[70px]"
+            class="absolute top-0 left-2 sm:left-auto sm:right-0 object-contain max-h-[32px] sm:max-h-[70px]"
             src="/images/icons/arrow-straight-down.svg"
             alt="Стрілка вниз"
         />
@@ -185,8 +198,22 @@
 <style scoped>
 .bgImage {
     background-image: url('/images/general/background-audience.png');
-    background-size: contain;
+    background-position: top center;
     background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (max-width: 1755px) {
+    .bgImage {
+        background-size: 100% 900px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bgImage {
+        background-image: url('/images/general/background-audience-mobile.png');
+        background-size: 100% 894px;
+    }
 }
 
 .bgOval1::before {
@@ -245,7 +272,7 @@
     pointer-events: none;
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1755px) {
     .bgOval1::before {
         width: 11.6875rem;
         height: 3.85rem;
@@ -268,6 +295,32 @@
         width: 8.6875rem;
         height: 3.85rem;
         transform: translatex(-20%) translateY(-55%) rotate(-8deg);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bgOval1::before {
+        width: 8.6875rem;
+        height: 2.55rem;
+        transform: translatex(60%) translateY(-91%) rotate(-8deg);
+    }
+
+    .bgOval2::before {
+        width: 7.6875rem;
+        height: 2.55rem;
+        transform: translatex(137%) translateY(-80%) rotate(8deg);
+    }
+
+    .bgOval3::before {
+        width: 6.6875rem;
+        height: 2.15rem;
+        transform: translatex(-5%) translateY(-90%) rotate(8deg);
+    }
+
+    .bgOval4::before {
+        width: 4.4875rem;
+        height: 2.15rem;
+        transform: translatex(-12%) translateY(-55%) rotate(-8deg);
     }
 }
 </style>

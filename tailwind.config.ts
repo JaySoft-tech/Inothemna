@@ -17,7 +17,7 @@ export default {
             xl: '1280px',
             '2xl': '1700',
 
-            desktop: '1700px',
+            desktop: '1755px',
         },
     },
 };
