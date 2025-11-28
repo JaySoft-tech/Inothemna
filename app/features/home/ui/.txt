@@ -1,0 +1,94 @@
+потрібно реалізувати блок з питаннями [width: 1600;
+height: 1000;
+left: 200px;
+gap: 40px;
+] на мобілці [width: 340;
+height: 500.;
+left: 80px;
+gap: 24px;
+]
+
+Якщ о у вас лишились questions: [
+width: 1100;
+height: 80;
+font-family: Outfit;
+font-weight: 700;
+font-style: Bold;
+font-size: 60px;
+leading-trim: NONE;
+line-height: 80px;
+letter-spacing: 0%;
+text-align: right;
+text-transform: uppercase;
+background: rgba(102, 3, 60, 1);
+
+на мобілках 
+
+width: 340;
+height: 60;
+font-family: Outfit;
+font-weight: 700;
+font-style: Bold;
+font-size: 25px;
+leading-trim: NONE;
+line-height: 29.95px;
+letter-spacing: 0%;
+text-transform: uppercase;
+background: rgba(102, 3, 60, 1);
+] 
+
+"то ось   The answers    на найчастіші з них" я зробив у вигляді фото. тому просто вставиш його theAnswers.svg [
+width: 634;
+height: 38;
+
+на мобілках
+width: 296;
+height: 18;
+]
+
+потім йде поле з найчастішими питаннями
+
+іконка +/- на пк 100х100, на мобілках 34х34
+
+текст до іконки має відстань 110px(42px на мобілках), Height 87px(40px на мобілках) стиль тексту [
+font-family: Shantell Sans;
+font-weight: 400;
+font-style: Regular;
+font-size: 45px;
+leading-trim: NONE;
+line-height: 86px;
+letter-spacing: 0%;
+text-align: right;
+
+на мобілках
+font-family: Shantell Sans;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 20px;
+letter-spacing: 0%;
+]
+
+при натисканні блок має відкриватися, "+" перетворюється на "-" де можна почитати відповідь на питання [
+Height 50px
+font-family: Outfit;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+background: rgba(102, 3, 60, 1);
+
+на мобілках
+Height 60px
+font-family: Outfit;
+font-weight: 400;
+font-style: Regular;
+font-size: 12px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+background: rgba(102, 3, 60, 1);
+]
