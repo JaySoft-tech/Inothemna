@@ -36,6 +36,10 @@
     </div>
 
     <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+      <TeacherSection />
+    </div>
+
+    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
       <ReviewsSction />
     </div>
 
@@ -60,6 +64,7 @@ import LoopText from '~/components/LoopText.vue';
 import RoadmapSection from '~/features/home/ui/RoadmapSection.vue';
 import ActivitiesSection from '~/features/home/ui/ActivitiesSection.vue';
 import ReviewsSction from '~/features/home/ui/ReviewsSction.vue';
+import TeacherSection from '~/features/home/ui/TeacherSection.vue';
 </script>
 
 <style scoped></style>

@@ -156,7 +156,9 @@
         </div>
       </div>
 
-      <div class="flex flex-col sm:flex-row justify-between items-center">
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center gap-[30px] sm:gap-[40px]"
+      >
         <div class="flex items-center gap-[10px] order-2 sm:order-1">
           <button
             @click="previousReview"
