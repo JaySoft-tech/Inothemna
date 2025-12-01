@@ -18,4 +18,11 @@ export default defineNuxtConfig({
             'Shantell Sans': [300, 400, 500, 600, 700, 800],
         },
     },
+
+    runtimeConfig: {
+        public: {
+            api: import.meta.env.VITE_STRAPI_API_URL,
+            token: import.meta.env.AUTHENTICATION_TOKEN,
+        },
+    },
 });

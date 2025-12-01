@@ -33,12 +33,14 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
     title: string;
     description: string;
     imageSrc: string;
     textPosition: 'left' | 'right';
 }>();
+
+const textPosition = computed(() => props.textPosition);
 </script>
 
 <style scoped></style>
