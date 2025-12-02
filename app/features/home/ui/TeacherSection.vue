@@ -109,7 +109,7 @@
               <img
                 src="/images/icons/right-arrow.svg"
                 alt="Arrow"
-                class="w-[14px] h-[14px] object-contain rotate-[-45deg]"
+                class="w-[14px] h-[14px] object-contain"
               />
             </button>
 
