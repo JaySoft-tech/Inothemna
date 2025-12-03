@@ -48,6 +48,7 @@
                         class="w-full h-auto rounded-[20px] md:rounded-[25px] lg:rounded-[30px] object-cover transition-all duration-300"
                     />
 
+<<<<<<< HEAD
                     <button
                         class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70px] h-[70px] sm:w-[90px] sm:h-[90px] md:w-[110px] md:h-[110px] lg:w-[136px] lg:h-[136px] hover:scale-110 transition-all duration-300"
                         @click="playVideo"
@@ -59,6 +60,76 @@
                         />
                     </button>
                 </div>
+=======
+      <!-- Mobile + Tablet Layout (до 1280px) -->
+      <div class="xl:hidden flex flex-col gap-[30px]">
+        <!-- Top Section -->
+        <div class="flex items-start justify-between px-[10px]">
+          <img
+            src="/images/icons/video.svg"
+            alt="Video"
+            class="w-[160px] h-[164px] xs:w-[180px] xs:h-[184px] object-contain ml-[-46px] flex-shrink-0"
+          />
+
+          <div
+            class="flex flex-col items-center gap-[12px] flex-1 px-[10px] mx-auto text-end"
+          >
+            <h2
+              class="text-[#66033C] font-outfit font-bold text-[24px] leading-[32px] xs:text-[28px] xs:leading-[36px] md:text-[32px] md:leading-[42px] uppercase transform translate-x-[-66px]"
+            >
+              як працює
+            </h2>
+
+            <img
+              src="/images/general/logo.svg"
+              alt="Logo"
+              class="w-[150px] h-[24px] xs:w-[170px] xs:h-[28px] md:w-[200px] md:h-[34px] object-contain"
+            />
+
+            <p
+              class="text-[#66033C] font-outfit font-medium text-[14px] xs:text-[15px] md:text-[17px] leading-[130%] max-w-[230px] mx-auto"
+            >
+              (поглянь за куліси, а <br />точніше переглянь відео)
+            </p>
+          </div>
+        </div>
+
+        <!-- Video Slider -->
+        <div class="flex flex-col gap-[30px] px-[20px]">
+          <div class="relative w-full max-w-[450px] mx-auto">
+            <transition name="fade-zoom" mode="out-in">
+              <img
+                :key="currentVideo"
+                :src="videos[currentVideo]!.preview"
+                alt="Video Preview"
+                class="w-full h-auto rounded-[20px] object-cover"
+              />
+            </transition>
+
+            <button
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70px] h-[70px] xs:w-[80px] xs:h-[80px] hover:scale-110 transition-all duration-300"
+              @click="playVideo"
+            >
+              <img
+                src="/images/icons/player.svg"
+                alt="Play"
+                class="w-full h-full object-contain"
+              />
+            </button>
+          </div>
+
+          <div class="flex flex-col items-center gap-[20px]">
+            <div class="flex items-center gap-[12px]">
+              <div
+                v-for="(_, index) in videos"
+                :key="`video-indicator-${index}`"
+                class="w-[68px] h-[8px] rounded-[4px] transition-all duration-300 cursor-pointer"
+                :class="
+                  index === currentVideo ? 'bg-[#66033C]' : 'bg-[#D37E91]'
+                "
+                @click="currentVideo = index"
+              ></div>
+>>>>>>> 9f314f341b88df7c4ff970d8637e92345eedada8
             </div>
 
             <!-- Mobile + Tablet Layout (до 1280px) -->
@@ -204,4 +275,19 @@ const playVideo = () => {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.fade-zoom-enter-active,
+.fade-zoom-leave-active {
+  transition: all 0.35s ease;
+}
+
+.fade-zoom-enter-from {
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+.fade-zoom-leave-to {
+  opacity: 0;
+  transform: scale(1.04);
+}
+</style>

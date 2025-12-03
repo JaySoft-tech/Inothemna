@@ -72,7 +72,7 @@ import FAQSection from '~/features/home/ui/FAQSection.vue';
 import LoopText from '~/components/LoopText.vue';
 import RoadmapSection from '~/features/home/ui/RoadmapSection.vue';
 import ActivitiesSection from '~/features/home/ui/ActivitiesSection.vue';
-import ReviewsSction from '~/features/home/ui/ReviewsSction.vue';
+import ReviewsSection from '~/features/home/ui/ReviewsSection.vue';
 import TeacherSection from '~/features/home/ui/TeacherSection.vue';
 import VideoSection from '~/features/home/ui/VideoSection.vue';
 import PriceSection from '~/features/home/ui/PriceSection.vue';

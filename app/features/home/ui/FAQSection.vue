@@ -33,18 +33,22 @@
                         <div
                             class="flex-shrink-0 w-[34px] h-[34px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] flex items-center justify-center transition-all duration-300"
                         >
-                            <img
-                                v-if="openFAQ === 0"
-                                src="/images/icons/minus.svg"
-                                alt="Minus"
-                                class="w-full h-full object-contain"
-                            />
-                            <img
-                                v-else
-                                src="/images/icons/plus.svg"
-                                alt="Plus"
-                                class="w-full h-full object-contain"
-                            />
+                            <transition name="icon-rotate" mode="out-in">
+                                <img
+                                    v-if="openFAQ === 0"
+                                    key="minus"
+                                    src="/images/icons/minus.svg"
+                                    alt="Minus"
+                                    class="w-full h-full object-contain"
+                                />
+                                <img
+                                    v-else
+                                    key="plus"
+                                    src="/images/icons/plus.svg"
+                                    alt="Plus"
+                                    class="w-full h-full object-contain"
+                                />
+                            </transition>
                         </div>
 
                         <!-- Question -->
@@ -56,14 +60,16 @@
                             </h3>
 
                             <!-- Answer -->
-                            <div
-                                v-if="openFAQ === 0"
-                                class="mt-[15px] sm:mt-[20px] text-[#66033C] font-outfit font-normal text-[12px] leading-[100%] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:leading-[100%] transition-all duration-300"
-                            >
-                                Ми пропонуємо індивідуальні та групові заняття
-                                онлайн. Кожен урок адаптується під ваші потреби
-                                та рівень знань.
-                            </div>
+                            <transition name="faq-expand">
+                                <div
+                                    v-if="openFAQ === 0"
+                                    class="mt-[15px] sm:mt-[20px] text-[#66033C] font-outfit font-normal text-[12px] leading-[100%] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:leading-[100%] transition-all duration-300 overflow-hidden"
+                                >
+                                    Ми пропонуємо індивідуальні та групові
+                                    заняття онлайн. Кожен урок адаптується під
+                                    ваші потреби та рівень знань.
+                                </div>
+                            </transition>
                         </div>
                     </button>
                 </div>
@@ -80,18 +86,22 @@
                         <div
                             class="flex-shrink-0 w-[34px] h-[34px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] flex items-center justify-center transition-all duration-300"
                         >
-                            <img
-                                v-if="openFAQ === 1"
-                                src="/images/icons/minus.svg"
-                                alt="Minus"
-                                class="w-full h-full object-contain"
-                            />
-                            <img
-                                v-else
-                                src="/images/icons/plus.svg"
-                                alt="Plus"
-                                class="w-full h-full object-contain"
-                            />
+                            <transition name="icon-rotate" mode="out-in">
+                                <img
+                                    v-if="openFAQ === 1"
+                                    key="minus"
+                                    src="/images/icons/minus.svg"
+                                    alt="Minus"
+                                    class="w-full h-full object-contain"
+                                />
+                                <img
+                                    v-else
+                                    key="plus"
+                                    src="/images/icons/plus.svg"
+                                    alt="Plus"
+                                    class="w-full h-full object-contain"
+                                />
+                            </transition>
                         </div>
 
                         <!-- Question -->
@@ -103,15 +113,17 @@
                             </h3>
 
                             <!-- Answer -->
-                            <div
-                                v-if="openFAQ === 1"
-                                class="mt-[15px] sm:mt-[20px] text-[#66033C] font-outfit font-normal text-[12px] leading-[100%] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:leading-[100%] transition-all duration-300"
-                            >
-                                Так, за потреби ви можете узгодити зміну графіка
-                                або перейти до іншої групи. Ми завжди
-                                намагаємося зробити навчання максимально зручним
-                                для вас.
-                            </div>
+                            <transition name="faq-expand">
+                                <div
+                                    v-if="openFAQ === 1"
+                                    class="mt-[15px] sm:mt-[20px] text-[#66033C] font-outfit font-normal text-[12px] leading-[100%] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:leading-[100%] transition-all duration-300 overflow-hidden"
+                                >
+                                    Так, за потреби ви можете узгодити зміну
+                                    графіка або перейти до іншої групи. Ми
+                                    завжди намагаємося зробити навчання
+                                    максимально зручним для вас.
+                                </div>
+                            </transition>
                         </div>
                     </button>
                 </div>
@@ -128,18 +140,22 @@
                         <div
                             class="flex-shrink-0 w-[34px] h-[34px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] flex items-center justify-center transition-all duration-300"
                         >
-                            <img
-                                v-if="openFAQ === 2"
-                                src="/images/icons/minus.svg"
-                                alt="Minus"
-                                class="w-full h-full object-contain"
-                            />
-                            <img
-                                v-else
-                                src="/images/icons/plus.svg"
-                                alt="Plus"
-                                class="w-full h-full object-contain"
-                            />
+                            <transition name="icon-rotate" mode="out-in">
+                                <img
+                                    v-if="openFAQ === 2"
+                                    key="minus"
+                                    src="/images/icons/minus.svg"
+                                    alt="Minus"
+                                    class="w-full h-full object-contain"
+                                />
+                                <img
+                                    v-else
+                                    key="plus"
+                                    src="/images/icons/plus.svg"
+                                    alt="Plus"
+                                    class="w-full h-full object-contain"
+                                />
+                            </transition>
                         </div>
 
                         <!-- Question -->
@@ -151,14 +167,16 @@
                             </h3>
 
                             <!-- Answer -->
-                            <div
-                                v-if="openFAQ === 2"
-                                class="mt-[15px] sm:mt-[20px] text-[#66033C] font-outfit font-normal text-[12px] leading-[100%] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:leading-[100%] transition-all duration-300"
-                            >
-                                Так, після успішного завершення курсу ви
-                                отримаєте сертифікат, який підтверджує ваш
-                                рівень володіння мовою.
-                            </div>
+                            <transition name="faq-expand">
+                                <div
+                                    v-if="openFAQ === 2"
+                                    class="mt-[15px] sm:mt-[20px] text-[#66033C] font-outfit font-normal text-[12px] leading-[100%] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:leading-[100%] transition-all duration-300 overflow-hidden"
+                                >
+                                    Так, після успішного завершення курсу ви
+                                    отримаєте сертифікат, який підтверджує ваш
+                                    рівень володіння мовою.
+                                </div>
+                            </transition>
                         </div>
                     </button>
                 </div>
@@ -175,18 +193,22 @@
                         <div
                             class="flex-shrink-0 w-[34px] h-[34px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] flex items-center justify-center transition-all duration-300"
                         >
-                            <img
-                                v-if="openFAQ === 3"
-                                src="/images/icons/minus.svg"
-                                alt="Minus"
-                                class="w-full h-full object-contain"
-                            />
-                            <img
-                                v-else
-                                src="/images/icons/plus.svg"
-                                alt="Plus"
-                                class="w-full h-full object-contain"
-                            />
+                            <transition name="icon-rotate" mode="out-in">
+                                <img
+                                    v-if="openFAQ === 3"
+                                    key="minus"
+                                    src="/images/icons/minus.svg"
+                                    alt="Minus"
+                                    class="w-full h-full object-contain"
+                                />
+                                <img
+                                    v-else
+                                    key="plus"
+                                    src="/images/icons/plus.svg"
+                                    alt="Plus"
+                                    class="w-full h-full object-contain"
+                                />
+                            </transition>
                         </div>
 
                         <!-- Question -->
@@ -198,14 +220,16 @@
                             </h3>
 
                             <!-- Answer -->
-                            <div
-                                v-if="openFAQ === 3"
-                                class="mt-[15px] sm:mt-[20px] text-[#66033C] font-outfit font-normal text-[12px] leading-[100%] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:leading-[100%] transition-all duration-300"
-                            >
-                                Ми приймаємо студентів будь-якого рівня — від
-                                повних початківців до тих, хто хоче вдосконалити
-                                свої навички.
-                            </div>
+                            <transition name="faq-expand">
+                                <div
+                                    v-if="openFAQ === 3"
+                                    class="mt-[15px] sm:mt-[20px] text-[#66033C] font-outfit font-normal text-[12px] leading-[100%] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:leading-[100%] transition-all duration-300 overflow-hidden"
+                                >
+                                    Ми приймаємо студентів будь-якого рівня —
+                                    від повних початківців до тих, хто хоче
+                                    вдосконалити свої навички.
+                                </div>
+                            </transition>
                         </div>
                     </button>
                 </div>
@@ -222,18 +246,22 @@
                         <div
                             class="flex-shrink-0 w-[34px] h-[34px] sm:w-[60px] sm:h-[60px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] flex items-center justify-center transition-all duration-300"
                         >
-                            <img
-                                v-if="openFAQ === 4"
-                                src="/images/icons/minus.svg"
-                                alt="Minus"
-                                class="w-full h-full object-contain"
-                            />
-                            <img
-                                v-else
-                                src="/images/icons/plus.svg"
-                                alt="Plus"
-                                class="w-full h-full object-contain"
-                            />
+                            <transition name="icon-rotate" mode="out-in">
+                                <img
+                                    v-if="openFAQ === 4"
+                                    key="minus"
+                                    src="/images/icons/minus.svg"
+                                    alt="Minus"
+                                    class="w-full h-full object-contain"
+                                />
+                                <img
+                                    v-else
+                                    key="plus"
+                                    src="/images/icons/plus.svg"
+                                    alt="Plus"
+                                    class="w-full h-full object-contain"
+                                />
+                            </transition>
                         </div>
 
                         <!-- Question -->
@@ -245,14 +273,16 @@
                             </h3>
 
                             <!-- Answer -->
-                            <div
-                                v-if="openFAQ === 4"
-                                class="mt-[15px] sm:mt-[20px] text-[#66033C] font-outfit font-normal text-[12px] leading-[100%] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:leading-[100%] transition-all duration-300"
-                            >
-                                Так, ми пропонуємо безкоштовний демо-урок, на
-                                якому ви зможете познайомитися з викладачем і
-                                методикою навчання.
-                            </div>
+                            <transition name="faq-expand">
+                                <div
+                                    v-if="openFAQ === 4"
+                                    class="mt-[15px] sm:mt-[20px] text-[#66033C] font-outfit font-normal text-[12px] leading-[100%] sm:text-[16px] md:text-[18px] lg:text-[20px] lg:leading-[100%] transition-all duration-300 overflow-hidden"
+                                >
+                                    Так, ми пропонуємо безкоштовний демо-урок,
+                                    на якому ви зможете познайомитися з
+                                    викладачем і методикою навчання.
+                                </div>
+                            </transition>
                         </div>
                     </button>
                 </div>
@@ -271,4 +301,39 @@ const toggleFAQ = (index: number) => {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.faq-expand-enter-active,
+.faq-expand-leave-active {
+    transition: all 0.4s ease;
+    max-height: 500px;
+    opacity: 1;
+}
+
+.faq-expand-enter-from,
+.faq-expand-leave-to {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+}
+
+.icon-rotate-enter-active,
+.icon-rotate-leave-active {
+    transition: all 0.3s ease;
+}
+
+.icon-rotate-enter-from {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.8);
+}
+
+.icon-rotate-leave-to {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.8);
+}
+
+.icon-rotate-enter-to,
+.icon-rotate-leave-from {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+}
+</style>
