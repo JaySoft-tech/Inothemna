@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flex justify-center py-[60px] sm:py-[80px] px-[20px]">
+    <div class="w-full flex justify-center px-[20px]">
         <div class="w-full max-w-[1800px] flex flex-col gap-[40px]">
             <!-- Title -->
             <h2

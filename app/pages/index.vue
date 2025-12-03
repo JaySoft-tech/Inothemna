@@ -1,64 +1,65 @@
 <template>
-  <div class="flex flex-col gap-[60px] sm:gap-[80px] pb-[80px]">
-    <!-- Hero section -->
-    <HeroSection
-      class="max-sm:mt-[20px] max-sm:px-[10px] max-w-[1800px] w-full mx-auto"
-    />
+    <div class="flex flex-col gap-[60px] sm:gap-[80px] pb-[80px]">
+        <!-- Hero section -->
+        <HeroSection
+            class="max-sm:mt-[20px] max-sm:px-[10px] max-w-[1800px] w-full mx-auto"
+        />
 
-    <!-- Audience section -->
-    <div class="px-[10px]">
-      <AudienceSection class="mt-[30px] mx-auto max-w-[1800px] w-full" />
+        <!-- Audience section -->
+        <div class="px-[10px]">
+            <AudienceSection class="mt-[30px] mx-auto max-w-[1800px] w-full" />
+        </div>
+
+        <div class="mt-[30px] sm:mt-[70px] px-[10px]">
+            <ComfortableLearning />
+        </div>
+
+        <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+            <PricesSection />
+        </div>
+
+        <LoopText
+            marquee-text="the the the the the the the the the "
+            :speed="1"
+            :curve-amount="0"
+            direction="right"
+            :interactive="false"
+            class-name="!text-[#66033C] text-xl "
+            text-color="#66033C33"
+        />
+
+        <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+            <RoadmapSection />
+        </div>
+
+        <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+            <ActivitiesSection />
+        </div>
+
+        <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+            <PriceSection />
+        </div>
+
+        <div class="px-[0px]">
+            <VideoSection />
+        </div>
+
+        <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+            <TeacherSection />
+        </div>
+
+        <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+            <ReviewsSction />
+        </div>
+
+        <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+            <FAQSection />
+        </div>
+
+        <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+            <ContactFormSection />
+        </div>
     </div>
-
-    <div class="mt-[30px] sm:mt-[70px] px-[10px]">
-      <ComfortableLearning />
-    </div>
-
-    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
-      <PricesSection />
-    </div>
-
-    <LoopText
-      marquee-text="the the the the the the the the the "
-      :speed="1"
-      :curve-amount="0"
-      direction="right"
-      :interactive="false"
-      class-name="!text-[#66033C] text-xl "
-    />
-
-    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
-      <RoadmapSection />
-    </div>
-
-    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
-      <ActivitiesSection />
-    </div>
-
-    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
-      <PriceSection />
-    </div>
-
-    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
-      <VideoSection />
-    </div>
-
-    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
-      <TeacherSection />
-    </div>
-
-    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
-      <ReviewsSction />
-    </div>
-
-    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
-      <FAQSection />
-    </div>
-
-    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
-      <ContactFormSection />
-    </div>
-  </div>
 </template>
 
 <script setup lang="ts">

@@ -32,7 +32,12 @@
                 />
             </defs>
 
-            <text v-if="ready" xml:space="preserve" :class="['', className]">
+            <text
+                v-if="ready"
+                xml:space="preserve"
+                :class="['', className]"
+                :fill="props.textColor || undefined"
+            >
                 <textPath
                     ref="textPathRef"
                     :href="`#${pathId}`"
@@ -61,6 +66,7 @@ interface CurvedLoopProps {
     curveAmount?: number;
     direction?: 'left' | 'right';
     interactive?: boolean;
+    textColor: string;
 }
 
 const props = withDefaults(defineProps<CurvedLoopProps>(), {
@@ -70,6 +76,7 @@ const props = withDefaults(defineProps<CurvedLoopProps>(), {
     curveAmount: 400,
     direction: 'left',
     interactive: true,
+    textColor: '',
 });
 
 const text = computed(() => {

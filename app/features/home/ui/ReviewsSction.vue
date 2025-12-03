@@ -1,7 +1,7 @@
 <template>
     <div
         v-if="reviewsFromStrapi.length > 0"
-        class="w-full flex justify-center py-[60px] sm:py-[80px] px-[0px]"
+        class="w-full flex justify-center px-[0px]"
     >
         <div class="w-full max-w-[1800px] flex flex-col">
             <div class="flex items-center mb-[20px] sm:mb-[80px]">
