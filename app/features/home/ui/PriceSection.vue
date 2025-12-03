@@ -12,7 +12,7 @@
 
                 <!-- Content Overlay -->
                 <div
-                    class="absolute inset-0 flex items-center justify-between px-[30px] md:px-[50px] lg:px-[80px] py-[40px] md:py-[50px] lg:py-[60px]"
+                    class="absolute inset-0 flex items-center justify-between px-[30px] md:px-[50px] lg:px-[80px] py-[40px] md:py-[50px] lg:py-[60px] sm:gap-[30px]"
                 >
                     <!-- Left Side: Title -->
                     <div

@@ -1,6 +1,6 @@
 <template>
     <div
-        class="bgImage min-h-[900px] sm:min-h-[1120px] relative text-[#FFF0E1]"
+        class="bgImage min-h-[900px] sm:min-h-[900px] desktop:min-h-[1120px] relative text-[#FFF0E1]"
     >
         <!-- heading text -->
         <div
@@ -163,7 +163,7 @@
 
         <!-- third row -->
         <div
-            class="w-full mt-[50px] sm:mt-[90px] desktop:mt-[50px] flex flex-col sm:items-end pr-[70px] sm:pr-0 px-[20px] sm:px-[35px] desktop:px-[52px]"
+            class="w-full mt-[50px] sm:mt-[90px] desktop:mt-[50px] flex flex-col sm:items-end pr-[70px] sm:pr-10 px-[20px] sm:px-[35px] desktop:px-[52px]"
         >
             <div
                 class="max-w-[505px] desktop:max-w-[625px] w-full flex items-end gap-[20px] sm:gap-[35px] border-t border-[#FFF0E1] pt-[30px] desktop:pt-[60px]"

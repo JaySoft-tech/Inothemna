@@ -58,7 +58,7 @@
                     </p>
 
                     <button
-                        class="mt-[20px] bg-[#66033C] rounded-[38px] text-[#FFF0E1] h-[55px] py-[13px] px-[35px] text-[22px]/[100%] font-bold"
+                        class="mt-[20px] bg-[#66033C] rounded-[38px] text-[#FFF0E1] h-[55px] py-[13px] px-[35px] text-[22px]/[100%] font-bold hover:bg-[#77033C]/[90] transition-all duration-300"
                     >
                         Спробувати
                     </button>
@@ -124,7 +124,7 @@
                 </p>
 
                 <button
-                    class="mt-[20px] bg-[#66033C] rounded-[38px] text-[#FFF0E1] h-[55px] py-[13px] px-[35px] text-[22px]/[100%] font-bold"
+                    class="mt-[20px] bg-[#66033C] rounded-[38px] text-[#FFF0E1] h-[55px] py-[13px] px-[35px] text-[22px]/[100%] font-bold hover:bg-[#55033C]/[90] transition-all duration-300"
                 >
                     Спробувати
                 </button>

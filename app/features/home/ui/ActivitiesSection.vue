@@ -114,7 +114,7 @@
             </p>
 
             <button
-                class="mt-[14px] sm:mt-[38px] bg-[#66033C] rounded-[38px] py-[13px] px-[30px] text-[#FFF0E1] font-outfit font-bold text-[22px]/[100%]"
+                class="mt-[14px] sm:mt-[38px] bg-[#66033C] rounded-[38px] py-[13px] px-[30px] text-[#FFF0E1] font-outfit font-bold text-[22px]/[100%] hover:bg-[#77033C]/[90] transition-all duration-300"
             >
                 Спробувати
             </button>

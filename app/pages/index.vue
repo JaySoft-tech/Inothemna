@@ -10,7 +10,7 @@
             <AudienceSection class="mt-[30px] mx-auto max-w-[1800px] w-full" />
         </div>
 
-        <div class="mt-[30px] sm:mt-[70px] px-[10px]">
+        <div class="mt-[30px] sm:mt-[0px] px-[0px]">
             <ComfortableLearning />
         </div>
 
@@ -18,25 +18,32 @@
             <PricesSection />
         </div>
 
-        <LoopText
-            marquee-text="the the the the the the the the the "
-            :speed="1"
-            :curve-amount="0"
-            direction="right"
-            :interactive="false"
-            class-name="!text-[#66033C] text-xl "
-            text-color="#66033C33"
-        />
+        <div v-if="isMounted" class="my-[0px] sm:my-[20px]">
+            <NuxtMarquee direction="right" :speed="70" :loop="0">
+                <div
+                    v-for="i in 50"
+                    class="mr-[20px] flex items-center gap-[20px]"
+                >
+                    <img
+                        class="object-contain max-h-[22px] sm:max-h-none"
+                        src="/images/icons/the2.png"
+                    />
+                    <div
+                        class="h-[10px] sm:h-[16px] w-[10px] sm:w-[16px] bg-[#FFE2EE] rounded-full"
+                    ></div>
+                </div>
+            </NuxtMarquee>
+        </div>
 
         <div class="mt-[00px] sm:mt-[0px] px-[10px]">
             <RoadmapSection />
         </div>
 
-        <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+        <div class="mt-[00px] sm:mt-[-80px] desktop:mt-0 px-[10px]">
             <ActivitiesSection />
         </div>
 
-        <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+        <div class="mt-[00px] sm:mt-[-80px] desktop:mt-0 px-[10px]">
             <PriceSection />
         </div>
 
@@ -49,7 +56,7 @@
         </div>
 
         <div class="mt-[00px] sm:mt-[0px] px-[10px]">
-            <ReviewsSction />
+            <ReviewsSection />
         </div>
 
         <div class="mt-[00px] sm:mt-[0px] px-[10px]">
@@ -76,6 +83,12 @@ import ReviewsSection from '~/features/home/ui/ReviewsSection.vue';
 import TeacherSection from '~/features/home/ui/TeacherSection.vue';
 import VideoSection from '~/features/home/ui/VideoSection.vue';
 import PriceSection from '~/features/home/ui/PriceSection.vue';
+
+const isMounted = ref(false);
+onMounted(async () => {
+    await nextTick();
+    isMounted.value = true;
+});
 </script>
 
 <style scoped></style>

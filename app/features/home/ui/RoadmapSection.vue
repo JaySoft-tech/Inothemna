@@ -1,5 +1,7 @@
 <template>
-    <div class="bgImage w-full relative desktop:min-h-[1400px] text-[#FFF0E1]">
+    <div
+        class="bgImage w-full relative sm:min-h-[1100px] desktop:min-h-[1300px] text-[#FFF0E1]"
+    >
         <!-- heading info -->
         <div
             class="relative ml-[20%] sm:ml-[25%] desktop:ml-[550px] pt-[30px] sm:pt-[62px] w-fit"
@@ -53,6 +55,12 @@
                 </p>
             </div>
         </div>
+
+        <img
+            class="absolute left-2 top-0 sm:left-auto sm:top-auto sm:right-3 bottom-10 desktop:bottom-5 object-contain max-h-[32px] sm:max-h-[70px]"
+            src="/images/icons/arrow-straight-down.svg"
+            alt="Стрілка вниз"
+        />
     </div>
 </template>
 
@@ -96,11 +104,11 @@ const stepsList = [
     background-size: 100% 1300px;
 }
 
-/* @media screen and (max-width: 1755px) {
+@media screen and (max-width: 1755px) {
     .bgImage {
-        background-size: 100% 900px;
+        background-size: 100% 1150px;
     }
-} */
+}
 
 @media screen and (max-width: 640px) {
     .bgImage {
