@@ -36,6 +36,14 @@
     </div>
 
     <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+      <PriceSection />
+    </div>
+
+    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
+      <VideoSection />
+    </div>
+
+    <div class="mt-[00px] sm:mt-[0px] px-[10px]">
       <TeacherSection />
     </div>
 
@@ -65,6 +73,8 @@ import RoadmapSection from '~/features/home/ui/RoadmapSection.vue';
 import ActivitiesSection from '~/features/home/ui/ActivitiesSection.vue';
 import ReviewsSction from '~/features/home/ui/ReviewsSction.vue';
 import TeacherSection from '~/features/home/ui/TeacherSection.vue';
+import VideoSection from '~/features/home/ui/VideoSection.vue';
+import PriceSection from '~/features/home/ui/PriceSection.vue';
 </script>
 
 <style scoped></style>
