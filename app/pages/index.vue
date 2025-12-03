@@ -76,7 +76,6 @@ import ComfortableLearning from '~/features/home/ui/ComfortableLearning.vue';
 import PricesSection from '~/features/home/ui/PricesSection.vue';
 import ContactFormSection from '~/features/home/ui/ContactFormSection.vue';
 import FAQSection from '~/features/home/ui/FAQSection.vue';
-import LoopText from '~/components/LoopText.vue';
 import RoadmapSection from '~/features/home/ui/RoadmapSection.vue';
 import ActivitiesSection from '~/features/home/ui/ActivitiesSection.vue';
 import ReviewsSection from '~/features/home/ui/ReviewsSection.vue';
