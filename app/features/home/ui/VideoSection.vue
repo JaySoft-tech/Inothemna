@@ -97,11 +97,14 @@
         <!-- Video Slider -->
         <div class="flex flex-col gap-[30px] px-[20px]">
           <div class="relative w-full max-w-[450px] mx-auto">
-            <img
-              :src="videos[currentVideo]!.preview"
-              alt="Video Preview"
-              class="w-full h-auto rounded-[20px] object-cover"
-            />
+            <transition name="fade-zoom" mode="out-in">
+              <img
+                :key="currentVideo"
+                :src="videos[currentVideo]!.preview"
+                alt="Video Preview"
+                class="w-full h-auto rounded-[20px] object-cover"
+              />
+            </transition>
 
             <button
               class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70px] h-[70px] xs:w-[80px] xs:h-[80px] hover:scale-110 transition-all duration-300"
@@ -200,4 +203,19 @@ const playVideo = () => {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.fade-zoom-enter-active,
+.fade-zoom-leave-active {
+  transition: all 0.35s ease;
+}
+
+.fade-zoom-enter-from {
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+.fade-zoom-leave-to {
+  opacity: 0;
+  transform: scale(1.04);
+}
+</style>
